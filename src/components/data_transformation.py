@@ -21,7 +21,7 @@ class DataTransformationConfig:
 class DataTransformation:
     def __init__(self):
         self.data_transformation_config = DataTransformationConfig()
-        self.numerical_columns = ['writing_score','reading_score']
+        self.numerical_columns = ['writting_score','reading_score']
         self.categorical_columns = ['gender',
                                 'race_ethnicity',
                                 'parental_level_of_education',

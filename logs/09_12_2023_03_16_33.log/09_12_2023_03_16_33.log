@@ -1,0 +1,71 @@
+[ 2023-09-12 03:16:34,054 ] 187 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.91:5000 
+[ 2023-09-12 03:16:34,054 ] 187 werkzeug - INFO - [33mPress CTRL+C to quit[0m 
+[ 2023-09-12 03:16:45,310 ] 187 werkzeug - INFO - 127.0.0.1 - - [12/Sep/2023 03:16:45] "GET / HTTP/1.1" 200 - 
+[ 2023-09-12 03:16:45,490 ] 187 werkzeug - INFO - 127.0.0.1 - - [12/Sep/2023 03:16:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 - 
+[ 2023-09-12 03:17:19,518 ] 187 werkzeug - INFO - 127.0.0.1 - - [12/Sep/2023 03:17:19] "GET / HTTP/1.1" 200 - 
+[ 2023-09-12 03:17:50,580 ] 187 werkzeug - INFO - 127.0.0.1 - - [12/Sep/2023 03:17:50] "GET / HTTP/1.1" 200 - 
+[ 2023-09-12 03:17:52,038 ] 187 werkzeug - INFO - 127.0.0.1 - - [12/Sep/2023 03:17:52] "GET / HTTP/1.1" 200 - 
+[ 2023-09-12 03:18:00,483 ] 1414 app - ERROR - Exception on /predictdata [GET] 
+Traceback (most recent call last):
+  File "/Users/jagpreetsingh/ML_Projects/mlops/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jagpreetsingh/ML_Projects/mlops/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jagpreetsingh/ML_Projects/mlops/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jagpreetsingh/ML_Projects/mlops/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/jagpreetsingh/ML_Projects/mlops/app.py", line 19, in predict_datapopint
+    return render_template('home.html')
+  File "/Users/jagpreetsingh/ML_Projects/mlops/venv/lib/python3.10/site-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/Users/jagpreetsingh/ML_Projects/mlops/venv/lib/python3.10/site-packages/flask/templating.py", line 132, in _render
+    rv = template.render(context)
+  File "/Users/jagpreetsingh/ML_Projects/mlops/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/jagpreetsingh/ML_Projects/mlops/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/jagpreetsingh/ML_Projects/mlops/templates/home.html", line 6, in top-level template code
+    <form action="{{ url_for('predict_datapoint')}}" method="post">
+  File "/Users/jagpreetsingh/ML_Projects/mlops/venv/lib/python3.10/site-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/Users/jagpreetsingh/ML_Projects/mlops/venv/lib/python3.10/site-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/Users/jagpreetsingh/ML_Projects/mlops/venv/lib/python3.10/site-packages/werkzeug/routing/map.py", line 950, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'predict_datapoint'. Did you mean 'predict_datapopint' instead?
+[ 2023-09-12 03:18:00,489 ] 187 werkzeug - INFO - 127.0.0.1 - - [12/Sep/2023 03:18:00] "[35m[1mGET /predictdata HTTP/1.1[0m" 500 - 
+[ 2023-09-12 03:19:02,461 ] 187 werkzeug - INFO - 127.0.0.1 - - [12/Sep/2023 03:19:02] "GET / HTTP/1.1" 200 - 
+[ 2023-09-12 03:19:09,951 ] 1414 app - ERROR - Exception on /predictdata [GET] 
+Traceback (most recent call last):
+  File "/Users/jagpreetsingh/ML_Projects/mlops/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jagpreetsingh/ML_Projects/mlops/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jagpreetsingh/ML_Projects/mlops/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jagpreetsingh/ML_Projects/mlops/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/jagpreetsingh/ML_Projects/mlops/app.py", line 19, in predict_datapopint
+    return render_template('home.html')
+  File "/Users/jagpreetsingh/ML_Projects/mlops/venv/lib/python3.10/site-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/Users/jagpreetsingh/ML_Projects/mlops/venv/lib/python3.10/site-packages/flask/templating.py", line 132, in _render
+    rv = template.render(context)
+  File "/Users/jagpreetsingh/ML_Projects/mlops/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/jagpreetsingh/ML_Projects/mlops/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/jagpreetsingh/ML_Projects/mlops/templates/home.html", line 6, in top-level template code
+    <form action="{{ url_for('predict_datapoint')}}" method="post">
+  File "/Users/jagpreetsingh/ML_Projects/mlops/venv/lib/python3.10/site-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/Users/jagpreetsingh/ML_Projects/mlops/venv/lib/python3.10/site-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/Users/jagpreetsingh/ML_Projects/mlops/venv/lib/python3.10/site-packages/werkzeug/routing/map.py", line 950, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'predict_datapoint'. Did you mean 'predict_datapopint' instead?
+[ 2023-09-12 03:19:09,953 ] 187 werkzeug - INFO - 127.0.0.1 - - [12/Sep/2023 03:19:09] "[35m[1mGET /predictdata HTTP/1.1[0m" 500 - 

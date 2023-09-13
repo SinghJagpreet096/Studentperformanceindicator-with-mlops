@@ -1,0 +1,18 @@
+[ 2023-09-12 03:25:42,465 ] 187 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.91:5000 
+[ 2023-09-12 03:25:42,465 ] 187 werkzeug - INFO - [33mPress CTRL+C to quit[0m 
+[ 2023-09-12 03:25:42,467 ] 187 werkzeug - INFO -  * Restarting with stat 
+[ 2023-09-12 03:25:43,062 ] 187 werkzeug - WARNING -  * Debugger is active! 
+[ 2023-09-12 03:25:43,069 ] 187 werkzeug - INFO -  * Debugger PIN: 107-465-610 
+[ 2023-09-12 03:25:47,704 ] 187 werkzeug - INFO - 127.0.0.1 - - [12/Sep/2023 03:25:47] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 - 
+[ 2023-09-12 03:25:47,811 ] 187 werkzeug - INFO - 127.0.0.1 - - [12/Sep/2023 03:25:47] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 - 
+[ 2023-09-12 03:25:47,811 ] 187 werkzeug - INFO - 127.0.0.1 - - [12/Sep/2023 03:25:47] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 - 
+[ 2023-09-12 03:25:47,820 ] 187 werkzeug - INFO - 127.0.0.1 - - [12/Sep/2023 03:25:47] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 - 
+[ 2023-09-12 03:25:53,415 ] 187 werkzeug - INFO - 127.0.0.1 - - [12/Sep/2023 03:25:53] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 - 
+[ 2023-09-12 03:25:53,503 ] 187 werkzeug - INFO - 127.0.0.1 - - [12/Sep/2023 03:25:53] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 - 
+[ 2023-09-12 03:25:53,503 ] 187 werkzeug - INFO - 127.0.0.1 - - [12/Sep/2023 03:25:53] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 - 
+[ 2023-09-12 03:25:53,517 ] 187 werkzeug - INFO - 127.0.0.1 - - [12/Sep/2023 03:25:53] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 - 
+[ 2023-09-12 03:26:14,314 ] 187 werkzeug - INFO -  * Detected change in '/Users/jagpreetsingh/ML_Projects/mlops/src/pipeline/predict_pipeline.py', reloading 
+[ 2023-09-12 03:26:14,403 ] 187 werkzeug - INFO -  * Restarting with stat 

@@ -1,0 +1,6 @@
+[ 2023-09-12 03:26:25,546 ] 187 werkzeug - WARNING -  * Debugger is active! 
+[ 2023-09-12 03:26:25,551 ] 187 werkzeug - INFO -  * Debugger PIN: 107-465-610 
+[ 2023-09-12 03:26:30,655 ] 187 werkzeug - INFO - 127.0.0.1 - - [12/Sep/2023 03:26:30] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 - 
+[ 2023-09-12 03:26:30,758 ] 187 werkzeug - INFO - 127.0.0.1 - - [12/Sep/2023 03:26:30] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 - 
+[ 2023-09-12 03:26:30,761 ] 187 werkzeug - INFO - 127.0.0.1 - - [12/Sep/2023 03:26:30] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 - 
+[ 2023-09-12 03:26:30,769 ] 187 werkzeug - INFO - 127.0.0.1 - - [12/Sep/2023 03:26:30] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 - 
