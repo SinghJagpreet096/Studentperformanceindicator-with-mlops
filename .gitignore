@@ -1,1 +1,4 @@
 venv/
+logs/
+catboost_info/
+src/__pychache__
