@@ -1,9 +1,6 @@
----
-title: "test"
-emoji: '😊'
-colorFrom: 'blue'
-colorTo: 'gray'
-sdk: 'docker'
-app_file: 'application.py'
+title: Test
+emoji: 📚
+colorFrom: pink
+colorTo: blue
+sdk: docker
 pinned: false
----
