@@ -1,11 +1,11 @@
 FROM python:3.10
 
-COPY src/ /app
-COPY artifacts/model.pkl /app
-COPY artifacts/preprocessor.pkl /app
-COPY templates/ /app
-COPY application.py /app
-COPY requirements.txt /app
+COPY ./src /app/src
+COPY artifacts/model.pkl /app/artifacts/model.pkl
+COPY artifacts/preprocessor.pkl /app/artifacts/preprocessor.pkl
+COPY ./templates /app/templates
+COPY application.py /app/application.py
+COPY requirements.txt /app/requirements.txt
 
 
 WORKDIR /app
