@@ -1,0 +1,8 @@
+[ 2024-01-02 03:27:49,545 ] 160 numexpr.utils - INFO - NumExpr defaulting to 8 threads. 
+[ 2024-01-02 03:27:50,246 ] 224 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.23.121:5000 
+[ 2024-01-02 03:27:50,246 ] 224 werkzeug - INFO - [33mPress CTRL+C to quit[0m 
+[ 2024-01-02 03:28:12,859 ] 224 werkzeug - INFO - 172.16.23.121 - - [02/Jan/2024 03:28:12] "GET / HTTP/1.1" 200 - 
+[ 2024-01-02 03:28:24,513 ] 224 werkzeug - INFO - 172.16.23.121 - - [02/Jan/2024 03:28:24] "POST /predictdata HTTP/1.1" 200 - 
