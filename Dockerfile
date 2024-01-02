@@ -1,14 +1,14 @@
 FROM python:3.10
 
-COPY src/ .
-COPY artifacts/model.pkl .
-COPY artifacts/preprocessor.pkl .
-COPY templates/ .
-COPY application.py .
-COPY requirements.txt .
+COPY src/ /app
+COPY artifacts/model.pkl /app
+COPY artifacts/preprocessor.pkl /app
+COPY templates/ /app
+COPY application.py /app
+COPY requirements.txt /app
 
 
-WORKDIR /.
+WORKDIR /app
 
 
 RUN pip install -r requirements.txt
