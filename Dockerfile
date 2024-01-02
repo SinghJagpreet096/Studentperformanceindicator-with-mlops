@@ -8,7 +8,7 @@ COPY application.py .
 COPY requirements.txt .
 
 
-WORKDIR /app
+WORKDIR /.
 
 
 RUN pip install -r requirements.txt
