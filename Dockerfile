@@ -1,9 +1,9 @@
 FROM python:3.10
 
-COPY src .
+COPY src/ .
 COPY artifacts/model.pkl .
 COPY artifacts/preprocessor.pkl .
-COPY templates .
+COPY templates/ .
 COPY application.py .
 COPY requirements.txt .
 
