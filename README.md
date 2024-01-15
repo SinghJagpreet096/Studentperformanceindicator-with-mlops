@@ -1,5 +1,5 @@
 ---
-title: Test
+title: Student Performance Indicator
 emoji: 📚
 colorFrom: pink
 colorTo: blue
